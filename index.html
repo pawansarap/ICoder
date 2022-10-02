@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>www.iCoder.com</title>
+</head>
+
+<body class="background">
+    <!-- For Navbar Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top margin-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact Us</a>
+                    </li>
+            </div>
+        </div>
+        <div class=" ">
+
+            <form class="d-flex">
+                <input class="form-control me-2" class="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success btn1 btn2" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="mx-2">
+            <!-- Button to Open the Login Modal -->
+            <button type="button" class="btn btn-danger btn1" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                Login
+            </button>
+        </div>
+        <div class="mx-1">
+
+            <!-- Button to Open the SignUp Modal -->
+            <button type="button" class="btn btn-danger btn1" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+                SignUp
+            </button>
+        </div>
+    </nav>
+
+    <!--Login Modal -->
+    <div class="modal" id="LoginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Login To iCoder</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+
+                            <img src="img/login.png" alt="Avatar" class="avatar">
+                        </div>
+                        <div class="container">
+
+                            <div class="form-group">
+                                <label for="LoginInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="LoginInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter Your email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone
+                                    else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="LoginInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="LoginInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="my-2">
+
+                                <button type="submit" class="btn btn-success">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--SignUp Modal -->
+    <div class="modal" id="SignUpModal">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Get an iCoder Account</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+
+                            <img src="img/login.png" alt="Avatar" class="avatar">
+                        </div>
+                        <div class="container">
+                            <div class="form-group">
+                                <label for="SignUpInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="SignUpInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter Your email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone
+                                    else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="SignUpInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="SignUpInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="SignUpInputPassword1">Confirm Password</label>
+                                <input type="password" class="form-control" id="SignUpInputConfirmPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="my-2">
+
+                                <button type="submit" class="btn btn-success">Create a New Account</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- For Sliding the Image -->
+
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carousel-fade">
+            <div class="carousel-item active">
+                <img src="img/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to iCoder</h2>
+                    <p>Technology News, Developmint and Traends.</p>
+                    <button class="btn btn-danger">Technology</button>
+                    <button class="btn btn-primary">We Development</button>
+                    <button class="btn btn-success">Tech Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>The Best Coding Blog</h2>
+                    <p>Technology News, Developmint and Traends.</p>
+                    <button class="btn btn-danger">Technology</button>
+                    <button class="btn btn-primary">We Development</button>
+                    <button class="btn btn-success">Tech Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.jpg" class="d-block w-100  " alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h2>Award Winnin Bolg</h2>
+                    <p>Technology News, Developmint and Traends.</p>
+                    <button class="btn btn-danger">Technology</button>
+                    <button class="btn btn-primary">We Development</button>
+                    <button class="btn btn-success">Tech Fun</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- For The 1st  Card -->
+    <div class="noteCard">
+
+        <div class="row mb-2  my-4">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">JavaScript</strong>
+                        <h3 class="mb-0">Learn JavaScript</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class=" bd-placeholder-img" width="200" height="250" " src=" img/image2.jpg " alt=" ">
+        </div>
+      </div>
+    </div>
+    <div class=" col-md-6 ">
+      <div class=" row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+        <div class=" col p-4 d-flex flex-column position-static ">
+          <strong class=" d-inline-block mb-2 text-success ">Design</strong>
+          <h3 class=" mb-0 ">Learn Designing</h3>
+          <div class=" mb-1 text-muted ">Nov 11</div>
+          <p class=" mb-auto ">This is a wider card with supporting text below as a natural lead-in to additional content.
+          </p>
+
+        </div>
+        <div class=" col-auto d-none d-lg-block ">
+          <img class=" class=" bd-placeholder-img" width="200" height="250" " src=" img/image.jpg " alt=" ">
+
+        </div>
+      </div>
+    </div>
+         </div>
+     </div>
+  <!-- For The 2nd Card -->
+  <div class=" noteCard">
+                        <div class=" row mb-2 my-4 ">
+                            <div class=" col-md-6 ">
+                                <div
+                                    class=" row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+                                    <div class=" col p-4 d-flex flex-column position-static ">
+                                        <strong class=" d-inline-block mb-2 text-primary ">Python</strong>
+                                        <h3 class=" mb-0 ">Learn Python</h3>
+                                        <div class=" mb-1 text-muted ">Nov 12</div>
+                                        <p class=" card-text mb-auto ">This is a wider card with supporting text below
+                                            as a natural lead-in to
+                                            additional content.</p>
+
+                                    </div>
+                                    <div class=" col-auto d-none d-lg-block ">
+                                        <img class=" class=" bd-placeholder-img" width="200" height="250" " src="
+                                            img/about-1.jpg " alt=" ">
+        </div>
+      </div>
+    </div>
+    <div class=" col-md-6 ">
+      <div class=" row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+        <div class=" col p-4 d-flex flex-column position-static ">
+          <strong class=" d-inline-block mb-2 text-success ">Java</strong>
+          <h3 class=" mb-0 ">Learn Java</h3>
+          <div class=" mb-1 text-muted ">Nov 11</div>
+          <p class=" mb-auto ">This is a wider card with supporting text below as a natural lead-in to additional content.
+          </p>
+
+        </div>
+        <div class=" col-auto d-none d-lg-block ">
+          <img class=" class=" bd-placeholder-img" width="200" height="250" " src=" img/about-2.jpg " alt=" ">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- For horizontal line -->
+  <hr>
+
+  <!-- footer of page -->
+  <footer>
+    <div class=" container footer footer-expand-md bg-success ">
+      <p><a href=" # " class=" text-light margin-buttom ">Back to top</a></p>
+      <p class=" float-right text-light ">© 2020-2021 iCoder. Inc. · <a href=" privacy.html "
+          class=" text-danger ">Privacy</a> · <a href=" terms.html " class=" text-danger ">Terms</a>
+      </p>
+
+    </div>
+  </footer>
+  <!-- my JavaScript file -->
+  <script src=" js/all.js"></script>
+
+       <!-- Option 1: Bootstrap Bundle with Popper -->
+         <script
+              src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p "
+                crossorigin="anonymous "></script>
+
+                  <!-- Option 2: Separate Popper and Bootstrap JS -->
+                                    <script
+                                            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js "
+                                            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB "
+                                            crossorigin="anonymous "></script>
+                                        <script
+                                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js "
+                                            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 "
+                                            crossorigin="anonymous "></script>
+
+</body>
+
+</html>
