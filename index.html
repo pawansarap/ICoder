@@ -9,14 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="css/all.css">
     <title>www.iCoder.com</title>
 </head>
 
 <body class="background">
     <!-- For Navbar Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top margin-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div class="container-fluid ">
             <a class="navbar-brand" href="#">iCoder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,29 +36,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">contact Us</a>
                     </li>
+                </ul>
+                <div>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" class="searchTxt" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success btn1 btn2" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="mx-2">
+                    <!-- Button to Open the Login Modal -->
+                    <button type="button" class="btn btn-danger btn1" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">
+                        Login
+                    </button>
+                    <!-- Button to Open the SignUp Modal -->
+                    <button type="button" class="btn btn-danger btn1" data-bs-toggle="modal"
+                        data-bs-target="#SignUpModal">
+                        SignUp
+                    </button>
+                </div>
+
             </div>
         </div>
-        <div class=" ">
 
-            <form class="d-flex">
-                <input class="form-control me-2" class="searchTxt" type="search" placeholder="Search"
-                    aria-label="Search">
-                <button class="btn btn-outline-success btn1 btn2" type="submit">Search</button>
-            </form>
-        </div>
-        <div class="mx-2">
-            <!-- Button to Open the Login Modal -->
-            <button type="button" class="btn btn-danger btn1" data-bs-toggle="modal" data-bs-target="#LoginModal">
-                Login
-            </button>
-        </div>
-        <div class="mx-1">
-
-            <!-- Button to Open the SignUp Modal -->
-            <button type="button" class="btn btn-danger btn1" data-bs-toggle="modal" data-bs-target="#SignUpModal">
-                SignUp
-            </button>
-        </div>
     </nav>
 
     <!--Login Modal -->
@@ -173,7 +174,7 @@
 
     <!-- For Sliding the Image -->
 
-    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -317,23 +318,14 @@
     </div>
   </footer>
   <!-- my JavaScript file -->
-  <script src=" js/all.js"></script>
+  <!-- <script src=" js/all.js"></script> -->
 
-       <!-- Option 1: Bootstrap Bundle with Popper -->
-         <script
-              src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p "
-                crossorigin="anonymous "></script>
-
-                  <!-- Option 2: Separate Popper and Bootstrap JS -->
-                                    <script
-                                            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js "
-                                            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB "
-                                            crossorigin="anonymous "></script>
+                                        <!-- Option 1: Bootstrap Bundle with Popper -->
                                         <script
-                                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js "
-                                            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 "
+                                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "
+                                            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p "
                                             crossorigin="anonymous "></script>
+
 
 </body>
 
